@@ -2,128 +2,74 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>도원의 네트로 블로그</title>
+  <title>도원의 블로그</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa;
+      color: #222;
       margin: 0;
-      font-family: 'Courier New', Courier, monospace;
-      background-color: #0a0a0a;
-      color: #00ffcc;
-      display: flex;
-      height: 100vh;
+      padding: 0;
     }
 
-    /* 왼쪽 사이드 메뉴 */
-    nav {
-      background-color: #111;
-      width: 200px;
+    header {
+      background-color: #343a40;
+      color: #fff;
       padding: 20px;
-      border-right: 2px solid #333;
-    }
-
-    nav h2 {
-      font-size: 1.2em;
-      color: #ff33cc;
-      margin-bottom: 15px;
-    }
-
-    nav a {
-      display: block;
-      color: #00ffff;
-      text-decoration: none;
-      margin-bottom: 10px;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffff33;
-      text-shadow: 0 0 8px #ff0;
-    }
-
-    /* 메인 콘텐츠 */
-    main {
-      flex: 1;
-      padding: 30px;
-    }
-
-    .neon-title {
-      font-size: 2.2em;
       text-align: center;
-      color: #00ffcc;
-      text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
-      margin-bottom: 30px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
     }
 
     article {
-      background-color: #1a1a1a;
+      background-color: #fff;
       padding: 20px;
-      border: 1px solid #444;
-      box-shadow: 0 0 10px #333;
-      margin-bottom: 30px;
-      border-radius: 5px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
 
-    article h3 {
-      color: #ff3399;
+    h2 {
+      margin-top: 0;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9em;
+      padding: 20px;
       color: #666;
-      margin-top: 40px;
+      font-size: 0.9em;
     }
-
-    a.button {
-      display: inline-block;
-      margin: 5px;
-      padding: 8px 12px;
-      background-color: #333;
-      color: #00ffcc;
-      border: 1px solid #00ffcc;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: 0.2s;
-    }
-
-    a.button:hover {
-      background-color: #00ffcc;
-      color: #000;
-    }
-
   </style>
 </head>
 <body>
 
-  <nav>
-    <h2>글 목록</h2>
-    <a href="#">HTML로 돌아간 하루</a>
-    <a href="#">복고 감성의 힘</a>
-    <a href="#">수강신청: 전쟁의 서막</a>
-    <br><br>
-    <a href="#" class="button">DRAMA</a>
-    <a href="#" class="button">DOPAMINE</a>
-  </nav>
+  <header>
+    <h1>도원의 블로그</h1>
+    <p>나의 개발, 공부, 일상 기록</p>
+  </header>
 
-  <main>
-    <div class="neon-title">도원의 네트로 블로그</div>
-
+  <div class="container">
     <article>
-      <h3>HTML로 돌아간 하루</h3>
-      <p>한줄만 CSS 모르면 말곡컷 HTML<br>큰 대막이 기만한 비막</p>
-      <p><em>2025년 5월 5일</em></p>
+      <h2>👨‍💻 첫 블로그 시작!</h2>
+      <p>드디어 GitHub Pages를 이용해서 나만의 블로그를 만들었다. HTML만으로도 충분히 시작할 수 있다!</p>
+      <p><em>2025년 5월 1일</em></p>
     </article>
 
     <article>
-      <h3>복고 감성의 힘</h3>
-      <p>아더 맞아도 아래도, 길눔하져 좋다. 감성과 개성으로 씐다.</p>
+      <h2>🧠 공부 기록</h2>
+      <p>요즘은 시험기간이라 집중이 필요하다. 계획을 잘 세워서 선형대수와 컴공개론을 정복할 것이다.</p>
       <p><em>2025년 5월 2일</em></p>
     </article>
+  </div>
 
-    <footer>
-      © 2025 도원의 블로그 | <a href="#" style="color:#00ffff;">이메일</a> | <a href="#" style="color:#00ffff;">GitHub</a>
-    </footer>
-  </main>
+  <footer>
+    &copy; 2025 도원 Lee | GitHub Pages로 제작
+  </footer>
 
 </body>
 </html>
