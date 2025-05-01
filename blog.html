@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>도원의 네트로 블로그</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #0a0a0a;
+      color: #00ffcc;
+      display: flex;
+      height: 100vh;
+    }
+
+    /* 왼쪽 사이드 메뉴 */
+    nav {
+      background-color: #111;
+      width: 200px;
+      padding: 20px;
+      border-right: 2px solid #333;
+    }
+
+    nav h2 {
+      font-size: 1.2em;
+      color: #ff33cc;
+      margin-bottom: 15px;
+    }
+
+    nav a {
+      display: block;
+      color: #00ffff;
+      text-decoration: none;
+      margin-bottom: 10px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffff33;
+      text-shadow: 0 0 8px #ff0;
+    }
+
+    /* 메인 콘텐츠 */
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .neon-title {
+      font-size: 2.2em;
+      text-align: center;
+      color: #00ffcc;
+      text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+      margin-bottom: 30px;
+    }
+
+    article {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border: 1px solid #444;
+      box-shadow: 0 0 10px #333;
+      margin-bottom: 30px;
+      border-radius: 5px;
+    }
+
+    article h3 {
+      color: #ff3399;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 40px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 5px;
+      padding: 8px 12px;
+      background-color: #333;
+      color: #00ffcc;
+      border: 1px solid #00ffcc;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: 0.2s;
+    }
+
+    a.button:hover {
+      background-color: #00ffcc;
+      color: #000;
+    }
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>글 목록</h2>
+    <a href="#">HTML로 돌아간 하루</a>
+    <a href="#">복고 감성의 힘</a>
+    <a href="#">수강신청: 전쟁의 서막</a>
+    <br><br>
+    <a href="#" class="button">DRAMA</a>
+    <a href="#" class="button">DOPAMINE</a>
+  </nav>
+
+  <main>
+    <div class="neon-title">도원의 네트로 블로그</div>
+
+    <article>
+      <h3>HTML로 돌아간 하루</h3>
+      <p>한줄만 CSS 모르면 말곡컷 HTML<br>큰 대막이 기만한 비막</p>
+      <p><em>2025년 5월 5일</em></p>
+    </article>
+
+    <article>
+      <h3>복고 감성의 힘</h3>
+      <p>아더 맞아도 아래도, 길눔하져 좋다. 감성과 개성으로 씐다.</p>
+      <p><em>2025년 5월 2일</em></p>
+    </article>
+
+    <footer>
+      © 2025 도원의 블로그 | <a href="#" style="color:#00ffff;">이메일</a> | <a href="#" style="color:#00ffff;">GitHub</a>
+    </footer>
+  </main>
+
+</body>
+</html>
